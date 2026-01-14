@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        html {
+
+        }
+        body {
+
+        }
+        p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <form onsubmit="login(event)">
+        <h2>Login Form</h2>
+<i class="fa fa-instagram" style="font-size:24px; color: purple;"></i>        <label>Email:</label>
+        <input name="email" title="email" id="email" type="email" placeholder="Enter Your Email ....." required/>
+        <br>
+        <label>Password:</label>
+        <input id="password" type="password" placeholder="Enter Your Password ....." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_=+\-]).{8,16}" required/>
+        <br>
+        <button type="submit">Login</button>
+
+    </form>
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="Reshab">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a class="btn btn-danger">HIII</a>
+  </div>
+</div>
+<br>
+<div style="width: 60%; height: 50vh;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/shirt/v/d/d/xl-plain-7-black-cheapshirts-original-imah7zyyjfuzmjaf.jpeg?q=90" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-Kvj7eHKv9o3n4FIzMCcdHcVK5falp5A0w&s" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7_c9H8vDfK1B0fooi51XHQfNx_gCM0Ca_Q&s" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/shirt/v/d/d/xl-plain-7-black-cheapshirts-original-imah7zyyjfuzmjaf.jpeg?q=90" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-Kvj7eHKv9o3n4FIzMCcdHcVK5falp5A0w&s" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT7_c9H8vDfK1B0fooi51XHQfNx_gCM0Ca_Q&s" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</body>
+<script>
+    document.getElementById('demo').innerHTML = "Coding Thinker"
+
+    function login(event) {
+        event.preventDefault()
+      const email =  document.getElementById('email').value 
+      const password =  document.getElementById('password').value 
+
+      const data = {
+        email: email,
+        password: password
+      }
+
+      console.log(data)
+      axios.post('http://localhost:8080/login', data)
+
+
+
+    }
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

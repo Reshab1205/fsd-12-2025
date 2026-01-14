@@ -1,0 +1,28 @@
+/* p {
+    color: aqua;
+} */
+
+.div1 {
+  background-color: aqua;
+}
+
+.div2 {
+  background-color: red;
+}
+
+.div3 {
+  background-color: greenyellow;
+}
+
+
+#p1 {
+    color: red;
+}
+
+#p2 {
+    color: blue;
+}
+
+#p3 {
+    color: rgb(239, 17, 228);
+}

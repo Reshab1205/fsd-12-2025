@@ -1,0 +1,38 @@
+p {
+    background-color:rgb(226, 207, 34);
+    height: 30vh;
+    /* width: 30%; */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: large;
+    font-variant: small-caps;
+    /* font: 'Aria' ; */
+    /* font-display: swap; */
+}
+
+.p1 {
+    color: blue;
+    background-color: red;
+    width: 500%;
+}
+
+.p2 {
+    color: aqua;
+    background-color: red;
+    max-width: 500%;
+}
+
+#id1 {
+    background-color: green;
+    /* background-image: url("assests/download\ \(1\).jpg"); */
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+
+}
+
+#id2 {
+    background: url("assests/images.jpg") no-repeat center ;
+    background-size: cover;
+}
+
