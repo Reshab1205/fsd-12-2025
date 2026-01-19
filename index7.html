@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: blueviolet;
+            margin: 0;
+        }
+        .p1 {
+            /* text-align: center;
+            text-decoration: none;
+            text-indent: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: aqua;
+            text-transform: capitalize;
+            text-shadow: 4px 3px 3px red;
+            font-style: italic; */
+            display: block;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <span class="p1">CSS Text</span>
+    <span class="p1" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, neque!</span>
+    <button onclick="changeCSS()">Submit</button>
+
+    <div>
+        <img id="img" src="assests/download (1).jpg" />
+        <!-- <img src="assests/images.jpg"> -->
+        <br>
+        <button onclick="changeImage()">Change</button>
+    </div>
+</body>
+<script>
+    function changeCSS() {
+        // document.getElementById('p1').style.display = 'none'
+        if(document.getElementById('p1').style.display == 'block') {
+            document.getElementById('p1').style.display = 'none'
+        } else {
+            document.getElementById('p1').style.display = 'block'
+        }
+    }
+
+    function changeImage() {
+        const data = document.getElementById('img').getAttribute('src')
+        if(data === 'assests/download (1).jpg') {
+            document.getElementById('img').setAttribute('src', 'assests/images.jpg')
+        } else {
+            document.getElementById('img').setAttribute('src', 'assests/download (1).jpg')
+        }
+    }
+</script>
+</html>
