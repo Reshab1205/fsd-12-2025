@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: separate;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+        <tr>
+            <td>Reshab</td>
+            <td>27</td>
+            <td>Vaishali</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="changeBorder()">Change</button>
+</body>
+<script>
+    function changeBorder() {
+   document.getElementById('table').style.borderCollapse = 'separate' 
+    }
+</script>
+</html>
