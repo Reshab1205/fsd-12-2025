@@ -13,15 +13,28 @@
           <div class="tab">HTML</div>
           <div class="tab">CSS</div>
           <div class="tab">JS</div>
-          <div class="tab">HTML</div>
-          <div class="tab">CSS</div>
-          <div class="tab">JS</div>
-          <div class="tab">HTML</div>
-          <div class="tab">CSS</div>
-          <div class="tab">JS</div>
+          <div class="tab">React</div>
+          <div class="tab">NodeJS</div>
+          <div class="tab">Express</div>
+          <div class="tab">MongoDb</div>
+          <div class="tab">Nextjs</div>
+          <div class="tab">PgSQL</div>
         </div>
-        <div class="content">Main Content</div>
+        <div id="content" class="content">Main Content</div>
     </div>
     <div class="footer">Footer</div>
   </body>
+  <script>
+    let items = document.querySelectorAll(".tab")
+    let data = document.getElementById("content")
+
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const value = item.textContent
+        // console.log(items)
+        data.textContent = value
+      })
+      
+    })
+  </script>
 </html>

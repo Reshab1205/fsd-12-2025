@@ -5,14 +5,25 @@
     overflow: visible;
 }
 
-.header, .footer {
+.header {
     display: flex;
     background-color: #222;
     color: whitesmoke;
     /* margin: 2px; */
     padding: 20px;
     justify-content: center;
+    position: sticky;
+    top: 0;
 
+}
+
+.footer {
+     display: flex;
+    background-color: #222;
+    color: whitesmoke;
+    /* margin: 2px; */
+    padding: 20px;
+    justify-content: center;
 }
 
 .main{
@@ -32,6 +43,7 @@
     padding: 10px 15px;
     color: rgb(225, 143, 11);
     text-align: center;
+    cursor: pointer;
 
 }
 
