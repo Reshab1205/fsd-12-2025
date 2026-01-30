@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+#search {
+    background-color: rgb(158, 148, 148) !important;
+    
+}
+
+#search input {
+    background-color: rgb(158, 148, 148) !important;
+    border: none;
+}
+
+
+.header {
+    display: flex;
+    background-color: #f5f1f1;
+    color:#1e1c1c;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+
+}
+
+.tab {
+    margin: 15px 10px;
+    padding: 10px 10px;
+    color: rgb(225, 143, 11);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.tab:hover {
+    background-color: aqua;
+}
+
+.footer {
+     display: flex;
+    background-color: #222;
+    color: whitesmoke;
+    padding: 20px;
+    justify-content: center;
+}
+
+.main{
+    /* display: flex; */
+    min-height: calc(100vh - 118px);
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center; /* hii */
+    
+}
+
